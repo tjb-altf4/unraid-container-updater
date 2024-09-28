@@ -16,8 +16,9 @@ Workflow:
 
 ## Remarks:
 - WARNING: This script does not check if tags exist, invalid tags can result in invalid templates, leading to container disappearing from Docker page.
-- Invalid templates can be recovered manually though Docker page "Add Container > Select a Template" (Find old container name), or container may be reoverable through rerunning script with valid tag (untested).
-- Test on a single container using the 
+- Invalid templates can be recovered manually though Docker page "Add Container > Select a Template" (Find old container name), or container may be recoverable through re-running script with valid tag (untested).
+- Test on a single container using the `TEMPLATE_PATTERN` to build up confidence with the tool
+- Container templates are backed up as part of the Unraid OS flash backup, it is highly recommended to do this backup before using this script.
 
 
 ## Example usage:
